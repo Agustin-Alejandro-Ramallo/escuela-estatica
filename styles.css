@@ -40,6 +40,7 @@ p{
     color: #fff;
 }
 
+
 .image {
     width:70px;
     height: 70px;
@@ -124,7 +125,7 @@ header nav a:hover{
 
 .sobreNosotros{
     width: 100%;
-    height: 150px;
+    height: auto;
     background: linear-gradient(to right, #141e30, #243b55);
     border-radius: 8px;
     box-shadow: 0px 10px 10px -4px rgba(0, 0, 0, 0.1);
@@ -134,7 +135,7 @@ header nav a:hover{
 
 .p-historia{
     width: 100%;
-    height: 350px;
+    height: auto;
     background: linear-gradient(to right, #141e30, #243b55);
     border-radius: 8px;
     box-shadow: 0px 10px 10px -4px rgba(0, 0, 0, 0.1);
@@ -171,10 +172,17 @@ header nav a:hover{
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
 	transform: translateY(-3%);
 }
-.card img{
-	width: 100%;
+.image-card{
+    width: 450px;
 	height: 350px;
+    margin-bottom: 10px;
 }
+.image-card img{
+	width: 100%;
+	height: auto;
+    
+}
+
 .card .contenido-card{
 	padding: 15px;
 	text-align: left;
@@ -304,9 +312,22 @@ tr:hover td{
 
 /* Inscripciones*/
 
-.inscripciones{
+.container-inscripcion{
     display: flex;
     justify-content: space-between;
+    margin: 20px;
+}
+
+.container-inscripcion h3{
+    font-size: 25px;
+    color: #f3e8e8;
+    padding: 5px;
+    text-align: center;
+}
+.container-inscripcion p{
+    font-size: 18px;
+    color: #f3e8e8;
+    text-align: left;
 }
 .image-inscrip-1-ano{
     width: 706px;
@@ -320,7 +341,7 @@ tr:hover td{
 
 .parrafos-conteiner{
     width: 800px;
-    height: 450px;
+    height: auto;
     margin: 8px;
     background-color: rgba(157, 148, 236, 0.3);
     border-radius: 8px;
@@ -332,23 +353,25 @@ footer{
     position: relative;
     bottom: 0px;
     width: 100%;
-    font-family: 'Source Sans Pro', sans-serif;
     background: #454071;
     margin-top: 10px;
 }
 .contenedor-footer{
     display: flex;
     color: #eedad1;
-    font-family: 'Source Sans Pro', sans-serif;
+    
 }
 .contenedor-footer .box{
     flex-basis: 50%;
     padding: 10px 20px;
 }
 .box h2{
-    font-size: 1.125rem;
+    font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
+}
+.box p{
+    font-size: 15px;
 }
 .box .contenido{
     margin: 20px 0 0 0;
@@ -414,12 +437,103 @@ footer{
 .centro .contenido .teléfono{
     margin: 10px 0;
 }
+.ubicacion{
+    display: flex;
+    justify-content: center;
+}
+.image-inscrip-1-ano{
+    width: 706px;
+    height: 363px;
+}
+.image-inscrip-1-ano img {
+    width: 100%;
+    height: auto;
+    margin: 7px;
+}
 
-@media screen and (max-width: 900px){
+
+
+
+@media (max-width: 414px){
+    h1{
+        font-size: 23px;
+    }
+    h2{
+        font-size: 17px;
+    }
+    /* Header */
+    header{
+        flex-direction: column;
+    }
+    .links{
+        flex-direction: column;
+    }
+    header nav a{
+        font-size: 15px;
+    }
+
+    /*Imagen Presentacion*/
+    .image-presentacion{
+        width: 380px;
+        height: 250px;
+    }
+    .image-presentacion img{
+        width: 100%;
+        height: auto;
+        margin: 7px;
+    }
+
+    /*Sobre Nosotros*/
+    .historia{
+        align-items: center;
+        
+    }
+    .historia p{
+        font-size: 14px;
+    }
+
+    /*Proyecto Educativo*/
+    .contenido-card p{
+        font-size: 12px;
+    }
+    .card{
+        width: 400px;
+        height: auto;
+        
+    }
+    /*Preceptores*/
+    .preceptores{
+        display: flex;
+        justify-content: center;
+        width: 414px;
+    }
+    .preceptores table{
+        width: 350px;
+        font-size: 12px;
+    }
     
+    /* Inscripciones */
+    .container-inscripcion{
+        flex-direction: column;
+    }
+    .image-inscrip-1-ano{
+        width: 350px;
+        height: 215px;
+    }
+    .parrafos-conteiner{
+        width: 350px;
+    }
+    .parrafos-conteiner h3{
+        font-size: 15px;
+    }
+    .parrafos-conteiner p{
+        font-size: 12px;
+    }
+    /* Footer */
     footer{
         padding: 0px;
     }
+    footer 
     .contenedor-footer{
         flex-wrap: wrap;
         flex-direction: column;
@@ -427,6 +541,24 @@ footer{
     .contenedor-footer .box{
         margin: 5px 0;
     }
+    .box h2{
+        font-size: 15px;
+    }
+    .box p{
+        font-size: 13px;
+    }
+    .contenido .texto{
+        font-size: 14px;
+    }
+    
+}
+@media (min-width: 768px){
+    
+    
+}
+@media (min-width: 1200px){
+    
+    
 }
 
 /* Background Animado*/
